@@ -16,7 +16,7 @@ while true;do
 	# Now with cases 
 	case $opt in
 		1) read -p "Do you want to make file? (y/n)" ans
-		   if [[ $ans = "y"]]; then
+		   if [[ $ans = "y" ]]; then
 		  	read -p "Enter file name : " file_name
 		  	touch "$file_name" && echo "File created"
 		   else
@@ -27,7 +27,7 @@ while true;do
 
 		2) read -p "Enter file path : " path
 		   read -p "Destination path : " des_path
-		   cp "$path" "$dees_path"
+		   cp "$path" "$des_path"
 		   ;;
 
 	   	3) read -p "Enter the current name : " old_name
